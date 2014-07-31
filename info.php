@@ -20,6 +20,11 @@ $your_address_2="Bags End, Middle Earth 90210";
 
 $total=15000;
 
-$homepage=array("display"=>"thehobbit.com","url"=>"http://thehobbit.com");
-$facebook=array("display"=>"mrbilbobaggins","url"=>"http://facebook.com/mrbilbobaggins");
-$twitter=array("display"=>"mrbilbobaggins","url"=>"http://twitter.com/mrbilbobaggins");
+$homepage["display"]="thehobbit.com";
+$homepage["url"]="http://thehobbit.com";
+
+$facebook["display"]="mrbilbobaggins";
+$facebook["url"]="http://facebook.com/mrbilbobaggins";
+
+$twitter["display"]="mrbilbobaggins";
+$twitter["url"]="http://twitter.com/mrbilbobaggins";

@@ -1,6 +1,6 @@
 <?php
-require_once "functions.php";
-require_once "info.php";
+	require_once "functions.php";
+	require_once "info.php";
 ?>
 
 <!DOCTYPE html>
@@ -10,19 +10,11 @@ require_once "info.php";
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 	
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>invoice-<?php echo downcase_space($projectName);?></title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-
-	<!-- Mobile Specific Metas
-  ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-  ================================================== -->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
@@ -43,21 +35,21 @@ require_once "info.php";
 		
 		<header class="sixteen columns ">
 
-			<section class="eight columns alpha">
+			<div class="eight columns alpha">
 				<h1 class="logo"><a href="<?php echo $logo["url"];?>" target='_blank'><?php echo $logo["title"];?></a><br><?php echo $logo["subtitle"];?></h1>
-			</section>
+			</div>
 
 		</header>
 
 		<div class="clear"></div>
 
-		<section class="eight columns">
+		<section class="one-third column">
 			<hr>
 			<h5>INVOICE</h5>
 			<p><?php get_date("date");?></p>
 		</section>
 
-		<section class="eight columns">
+		<section class="one-third column">
 			<hr>
 			<h5>Client</h5>
 			<?php 
@@ -67,33 +59,35 @@ require_once "info.php";
 			?>
 		</section>
 		
-		<div class="clear"></div>
-
-		<section class="eight columns">
+		<section class="one-third column">
 			<hr>
 			<h5>Project</h5>
 			<?php html("p","$projectName<br>complete: $completed");?>
 		</section>
 
-		<section class="eight columns">
+		<div class="clear"></div>
+
+		<section class="one-third column">
 			<hr>
 			<h5>Description</h5>
 			<?php html("p",$description);?>
 		</section>		
 
-		<div class="clear"></div>		
 
-		<section class="eight columns">
+		<section class="one-third column">
 			<hr>
 			<h5>Total</h5>
 			<?php html("p","$".number_format($total,2));?>
 		</section>
 
-		<section class="eight columns">
+		<section class="one-third column">
 			<hr>
 			<h5>Please send payment to</h5>
 			<?php html("p","$your_name<br>$your_address_1<br>$your_address_2");?>
-		</section>
+		</section>		
+
+		<div class="clear"></div>
+
 
 		<section class="sixteen columns">
 			<hr>
@@ -105,12 +99,10 @@ require_once "info.php";
 	</div><!-- container -->
 	
 
-<!-- DEBUG 
-==================================================-->
-<div class="responsive-indicator"></div>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<!-- DEBUG 
+	==================================================-->
+	<div class="responsive-indicator"></div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-<!-- End Document
-================================================== -->
 </body>
 </html>

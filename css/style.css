@@ -1147,7 +1147,7 @@ body {
   font-weight: 300;
   margin-top: 40px;
   margin-bottom: 100px;
-  font-size: 15pt; }
+  font-size: 20pt; }
 
 h3, h5 {
   margin-bottom: 0.5em;
@@ -1157,7 +1157,7 @@ p {
   line-height: 1.25em; }
 
 section {
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 hr {
   border: 0;
@@ -1184,7 +1184,7 @@ li.social img {
   top: 2px; }
 
 .logo {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 1em; }
   .logo a, .logo a:visited {
     border-bottom: 0; }
@@ -1199,7 +1199,7 @@ h1 {
   line-height: 1.2em; }
 
 header {
-  margin-bottom: 30px; }
+  margin-bottom: 0px; }
 
 /* #Page Styles
 ================================================== */
