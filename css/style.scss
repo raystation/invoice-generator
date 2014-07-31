@@ -1,0 +1,109 @@
+@import "sass/normalize";
+@import "sass/base";
+@import "sass/skeleton";
+// @import "sass/responsive-indicator";
+
+$link-color:steelblue;
+
+body {
+	font-family: "Gotham Rounded",Helvetica;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	font-size: 15pt;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+	@extend .futura;
+}
+
+h3,h5 {
+	margin-bottom: 0.5em;
+	letter-spacing: 3px;
+}
+
+p {
+	line-height: 1.25em;
+}
+
+section {
+	margin-bottom: 2em;
+}
+
+hr { 
+	border: 0;
+	height : 15px;
+	background: url('../img/bg/dots.gif') repeat-x;
+	margin : 0 0 1em 0 ;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: $link-color;
+	// border-bottom: 2px solid rgba($link-color,0.25);
+	&:hover {
+		color: darken($link-color,20%);
+	}
+}
+
+$iconsize:12px;
+li {
+	list-style: none;
+	font-size: 0.75em;
+	line-height: 0.5em;
+}
+
+li.social {
+	img {
+		width: $iconsize;
+		height: $iconsize;
+		margin-right: 0.5em;
+		position: relative;
+		top: 2px;
+	}
+}
+
+.logo {
+	font-size: 25px;
+	margin-bottom: 1em;
+
+	a,a:visited{
+		border-bottom: 0;
+	}
+}
+
+.futura {
+	font-family: "Futura LT Book",Futura,Helvetica,sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+h1 {
+	line-height: 1.2em;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
