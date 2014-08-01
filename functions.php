@@ -19,3 +19,7 @@ function downcase_space($string){
 	$string = strtolower($string);
 	return $string;
 }
+
+function money($num,$decimal=2){
+	return number_format($num,$decimal);
+}

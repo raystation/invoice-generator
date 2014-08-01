@@ -33,25 +33,26 @@
 
 	<div class="container">
 		
-		<header class="sixteen columns ">
+		<div class="two-thirds column">
+			<h1 class="logo"><a href="<?php echo $your_company["url"];?>" target='_blank'><?php echo $your_company["name"];?></a><br><?php echo $your_company["subtitle"];?></h1>
+		</div>
 
-			<div class="eight columns alpha">
-				<h1 class="logo"><a href="<?php echo $logo["url"];?>" target='_blank'><?php echo $logo["title"];?></a><br><?php echo $logo["subtitle"];?></h1>
-			</div>
-
-		</header>
+		<section class="one-third column">
+			<h6>INVOICE</h6>
+			<p><?php get_date("date");?></p>
+		</section>
 
 		<div class="clear"></div>
 
 		<section class="one-third column">
 			<hr>
-			<h5>INVOICE</h5>
-			<p><?php get_date("date");?></p>
-		</section>
+			<h6>Project</h6>
+			<?php html("p","$projectName<br>completed: $completed");?>
+		</section>	
 
-		<section class="one-third column">
+ 		<section class="one-third column">
 			<hr>
-			<h5>Client</h5>
+			<h6>Client</h6>
 			<?php 
 				if ( is_null($contactName) ) { html("p",$company); }
 				elseif ( is_null($company) ) { html("p",$contactName); } 
@@ -59,43 +60,43 @@
 			?>
 		</section>
 		
-		<section class="one-third column">
-			<hr>
-			<h5>Project</h5>
-			<?php html("p","$projectName<br>complete: $completed");?>
-		</section>
-
-		<div class="clear"></div>
 
 		<section class="one-third column">
 			<hr>
-			<h5>Description</h5>
-			<?php html("p",$description);?>
-		</section>		
-
-
-		<section class="one-third column">
-			<hr>
-			<h5>Total</h5>
-			<?php html("p","$".number_format($total,2));?>
-		</section>
-
-		<section class="one-third column">
-			<hr>
-			<h5>Please send payment to</h5>
+			<h6>Please send payment to</h6>
 			<?php html("p","$your_name<br>$your_address_1<br>$your_address_2");?>
-		</section>		
+		</section>	
+
+		<div class="clear"></div>
+
+		<section class="two-thirds column">
+			<hr>
+			<h6>Description</h6>
+			<?php html("p",$description);?>
+		</section>	
+
+
+		<section class="one-third column">
+			<hr>
+			<h6>Total</h6>
+			<?php html("p","$".money($total));?>
+		</section>	
 
 		<div class="clear"></div>
 
 
-		<section class="sixteen columns">
+		<section class="two-thirds column">
 			<hr>
+			<?php echo $message; ?>
+		</section>		
+	
+		<section class="one-third column">
+			<hr>
+			<li><a href="<?php echo $your_company["url"];?>"><?php echo $your_company["name"]; ?></a>
 			<li><a href="<?php echo $homepage["url"];?>"><?php echo $homepage["display"];?></a>
 			<li class="social"><img src="img/icon/fb_icon.svg" alt=""><a target='_blank' href="<?php echo $facebook["url"];?>"><?php echo $facebook["display"];?></a>
 			<li class="social"><img src="img/icon/tw_icon.svg" alt=""><a target='_blank' href="<?php echo $twitter["url"];?>"><?php echo $twitter["display"];?></a>
-		</section>		
-	
+		</section>
 	</div><!-- container -->
 	
 

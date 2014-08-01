@@ -1,9 +1,8 @@
-<?php 
+<?php
 
-$logo=array(
-	"title"=>"Webdesign Co.",
-	"subtitle"=>"Web Development",
-	"url"=>"http://foo.com");
+$your_company["name"]="Webdesign Co.";
+$your_company["subtitle"]="Web Development";
+$your_company["url"]="http://foo.com";
 
 $projectName="Project Name";
 $description="
@@ -20,8 +19,9 @@ $your_address_2="Bags End, Middle Earth 90210";
 
 $total=15000;
 
-$homepage["display"]="thehobbit.com";
-$homepage["url"]="http://thehobbit.com";
+$message="
+	Your business is appreciated! Thank you! Please feel free to contact me with any questions.
+";
 
 $facebook["display"]="mrbilbobaggins";
 $facebook["url"]="http://facebook.com/mrbilbobaggins";
