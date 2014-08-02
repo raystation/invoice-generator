@@ -3,6 +3,8 @@
 $your_company["name"]="Webdesign Co.";
 $your_company["subtitle"]="Web Development";
 $your_company["url"]="http://foo.com";
+$your_company["email"]="bilbo@thehobbit.com";
+$your_company["phone"]="111-222-3456";
 
 $projectName="Project Name";
 $description="

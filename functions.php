@@ -24,7 +24,7 @@ function money($num,$decimal=2){
 	return number_format($num,$decimal);
 }
 
-function get_total($breakdown=true,$flatrate){
+function get_total($breakdown=true,$flatrate=NULL){
 	global $projectBreakdown;
 	$total=0;
 
