@@ -17,7 +17,13 @@ $your_name="Bilbo Baggins";
 $your_address_1="10 South Main Street";
 $your_address_2="Bags End, Middle Earth 90210";
 
-$total=15000;
+$rate=40; //perhour
+
+$projectBreakdown=array(
+	array("description"=>"logo design","hours"=>10,"rate"=>$rate),
+	array("description"=>"wireframing","hours"=>5,"rate"=>$rate),
+	array("description"=>"web design","hours"=>5,"rate"=>$rate),
+);
 
 $message="
 	Your business is appreciated! Thank you! Please feel free to contact me with any questions.

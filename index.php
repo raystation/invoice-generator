@@ -79,7 +79,10 @@
 		<section class="one-third column">
 			<hr>
 			<h6>Total</h6>
-			<?php html("p","$".money($total));?>
+			<?php 
+			// html("p","$".get_total());
+			echo get_total();
+			?>
 		</section>	
 
 		<div class="clear"></div>

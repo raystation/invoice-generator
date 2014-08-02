@@ -1201,6 +1201,9 @@ h1 {
 header {
   margin-bottom: 0px; }
 
+table td {
+  padding-right: 1em; }
+
 /* #Page Styles
 ================================================== */
 /* #Media Queries
