@@ -97,7 +97,7 @@
 			<hr>
 			<div class="four columns alpha">
 				
-				<li><a href="<?php echo $your_company["url"];?>"><?php echo $your_company["name"]; ?></a>
+				<li><a href="<?php echo $your_company["url"];?>"><?php echo $your_contact_name; ?></a>
 				
 				<li><a href="mailto:<?php echo $your_company["email"];?>"><?php echo $your_company["email"]; ?></a>
 				
