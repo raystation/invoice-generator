@@ -1,6 +1,7 @@
 <?php
 	require_once "functions.php";
-	require_once "info.php";
+	// require_once "info.php";
+	require_once "history/wired-norton-illustrations.php";
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +81,7 @@
 			<h6>Total</h6>
 			<?php 
 			// html("p","$".get_total());
-			echo get_total();
+			echo get_total(false,5000);
 			?>
 		</section>	
 
@@ -94,10 +95,13 @@
 	
 		<section class="eight columns">
 			<hr>
+			
 			<li><a href="<?php echo $your_company["url"];?>"><?php echo $your_company["name"]; ?></a>
-			<li><a href="<?php echo $homepage["url"];?>"><?php echo $homepage["display"];?></a>
+
 			<li class="social"><img src="img/icon/fb_icon.svg" alt=""><a target='_blank' href="<?php echo $facebook["url"];?>"><?php echo $facebook["display"];?></a>
+
 			<li class="social"><img src="img/icon/tw_icon.svg" alt=""><a target='_blank' href="<?php echo $twitter["url"];?>"><?php echo $twitter["display"];?></a>
+
 		</section>
 	</div><!-- container -->
 	

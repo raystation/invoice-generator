@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 function get_date($var=NULL) {
 	date_default_timezone_set("America/Los_Angeles");
@@ -24,11 +24,17 @@ function money($num,$decimal=2){
 	return number_format($num,$decimal);
 }
 
-function get_total($breakdown=true){
+function get_total($breakdown=true,$flatrate){
 	global $projectBreakdown;
-	$total;
+	$total=0;
 
-	if ($breakdown){
+	if ( !is_null($flatrate) ) {
+		echo "$".money($flatrate);	
+		return;
+	}	
+
+	if ($breakdown)
+	{
 		echo "<table>";
 		echo "<tr>";
 		echo "<th>Description";
@@ -48,11 +54,13 @@ function get_total($breakdown=true){
 
 		echo "<tr><td><td><td><td class='add-top bold'>$".money($total);
 		echo "</table>";
-	} else {
+	} 
+	else 
+	{
 		foreach ($projectBreakdown as $item_total) {
 			$total = $total + ( $item_total["hours"] * $item_total["rate"] );
 		}
-		return money($total);
+		echo "$".money($total);
 	}
 }
 
