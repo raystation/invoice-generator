@@ -44,13 +44,13 @@
 
 		<div class="clear"></div>
 
-		<section class="one-third column">
+		<section class="four columns">
 			<hr>
 			<h6>Project</h6>
 			<?php html("p","$projectName<br>completed: $completed");?>
 		</section>	
 
- 		<section class="one-third column">
+ 		<section class="four columns">
 			<hr>
 			<h6>Client</h6>
 			<?php 
@@ -60,23 +60,22 @@
 			?>
 		</section>
 		
-
-		<section class="one-third column">
+		<section class="eight columns">
 			<hr>
 			<h6>Please send payment to</h6>
 			<?php html("p","$your_name<br>$your_address_1<br>$your_address_2");?>
-		</section>	
+		</section>
 
 		<div class="clear"></div>
 
-		<section class="two-thirds column">
+		<section class="eight columns">
 			<hr>
 			<h6>Description</h6>
 			<?php html("p",$description);?>
 		</section>	
 
 
-		<section class="one-third column">
+		<section class="eight columns">
 			<hr>
 			<h6>Total</h6>
 			<?php 
@@ -88,12 +87,12 @@
 		<div class="clear"></div>
 
 
-		<section class="two-thirds column">
+		<section class="eight columns">
 			<hr>
 			<?php echo $message; ?>
-		</section>		
+		</section>
 	
-		<section class="one-third column">
+		<section class="eight columns">
 			<hr>
 			<li><a href="<?php echo $your_company["url"];?>"><?php echo $your_company["name"]; ?></a>
 			<li><a href="<?php echo $homepage["url"];?>"><?php echo $homepage["display"];?></a>

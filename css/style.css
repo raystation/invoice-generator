@@ -1142,6 +1142,15 @@ or wrap each row of columns in a <div class="row"> */
   width: 0;
   height: 0; }
 
+.add-top {
+  padding-top: 0.5em; }
+
+.underline {
+  border-bottom: 2px solid rgba(70, 130, 180, 0.25); }
+
+.bold {
+  font-weight: 900; }
+
 body {
   font-size: 13pt;
   font-family: "Gotham Rounded",Helvetica;
@@ -1201,8 +1210,12 @@ h1 {
 header {
   margin-bottom: 0px; }
 
+table th {
+  font-weight: 900;
+  text-align: left;
+  padding-right: 2em; }
 table td {
-  padding-right: 1em; }
+  padding-right: 2em; }
 
 /* #Page Styles
 ================================================== */
