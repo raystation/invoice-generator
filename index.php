@@ -33,11 +33,11 @@
 
 	<div class="container">
 		
-		<div class="two-thirds column">
+		<div class="eight columns">
 			<h1 class="logo"><a href="<?php echo $your_company["url"];?>" target='_blank'><?php echo $your_company["name"];?></a><br><?php echo $your_company["subtitle"];?></h1>
 		</div>
 
-		<section class="one-third column">
+		<section class="eight columns">
 			<h6>INVOICE</h6>
 			<p><?php get_date("date");?></p>
 		</section>
